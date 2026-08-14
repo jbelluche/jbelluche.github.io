@@ -12,7 +12,15 @@
 	box-sizing: border-box;
 }
 
+html {
+	min-height: 100%;
+	background: var(--paper);
+}
+
 body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	margin: 0;
 	padding: 0;
 	background: var(--paper);
@@ -23,10 +31,14 @@ body {
 	overflow-wrap: break-word;
 }
 
+body > main {
+	flex: 1;
+}
+
 main {
 	width: 720px;
 	max-width: calc(100% - 2rem);
-	margin: auto;
+	margin: 0 auto;
 	padding: 3rem 1rem;
 }
 
@@ -69,7 +81,7 @@ a {
 }
 
 a:hover {
-	opacity: 0.75;
+	opacity: 0.7;
 }
 
 p {
@@ -92,7 +104,7 @@ img {
 
 code {
 	padding: 2px 5px;
-	background-color: #ebe6db;
+	background: #ebe6db;
 	border-radius: 2px;
 }
 
